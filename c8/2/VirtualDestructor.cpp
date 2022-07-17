@@ -11,7 +11,7 @@ class First
 		{
 			strOne = new char[strlen(str) + 1];
 		}
-		~First(void)
+		virtual ~First(void)
 		{
 			cout<<"~First()"<<endl;
 			delete []strOne;
@@ -38,8 +38,6 @@ int main(void)
 {
 	First *ptr = new Second("simple", "complex");
 	delete ptr;
-	while (1)
-		;
 	return 0;
 
 }
